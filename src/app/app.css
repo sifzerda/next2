@@ -1,0 +1,14 @@
+/* src/components/Navigation.module.css */
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }

@@ -1,9 +1,31 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+     
+     {/* ------------------------Navigation Tabs -----------------------------------------*/}
+     <nav className="w-full bg-gray-800 text-white p-4">
+        <ul className="flex space-x-4 justify-center">
+          <li>
+            <Link href="/" className="hover:text-gray-400">Home</Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-gray-400">About</Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-gray-400">Contact</Link>
+          </li>
+          <li>
+            <Link href="/references" className="hover:text-gray-400">References</Link>
+          </li>
+        </ul>
+      </nav>
+{/* ----------------------------------------------------------------------------------*/}
+     
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+
         <Image
           className="dark:invert"
           src="/next.svg"
